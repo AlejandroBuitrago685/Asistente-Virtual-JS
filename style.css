@@ -1,0 +1,101 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#parar{
+    background-color: brown;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    border: none;
+    font-size: large;
+    visibility: hidden;
+
+}
+
+.button{
+    background-color:#f5af19;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.header{
+    width: 101%;
+    height: 60px;
+    top: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    position: absolute;
+    background-color:#333;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.main-landing-message {
+    position: relative;
+    margin-top: 100px;
+    padding-left: 150px;
+    margin-bottom: 150px;
+    
+  }
+  .main-landing-message p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .main-landing-message h1, h2 {
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .main-landing-message  h1 {
+    color:#f5af19;
+    text-shadow: 
+    0 3px 6px rgba(0,0,0, 0.12),
+    0 3px 6px rgba(0,0,0, 0.24);
+    font-size: 4em;
+    margin-bottom: 15px;
+  }
+  .main-landing-message  h2 {
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 1em;
+  }
+
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -10px;
+    text-align:center;
+    background-color: #333;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    width: 101%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
