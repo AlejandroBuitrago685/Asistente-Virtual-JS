@@ -76,13 +76,10 @@ function Ecuchando() {
         window.speechSynthesis.speak(utter);
       },
 
-      'open youtube': function () {
-        window.open('http://youtube.com/', '_blank');
+      'open *pagina': function (pagina) {
+        window.open(`http://${pagina}.com/`, '_blank');
       },
 
-      'open google': function () {
-        window.open('http://google.com/', '_blank');
-      },
 
       'adios': function () {
         utter.text = `Hasta pronto ${nombre}`;
@@ -110,7 +107,7 @@ function Ecuchando() {
             console.log("Nombre: ", frases[0]);
             nombreAsistente = frases[0];
             annyang.removeCallback('result');
-            utter.text = "Gracias a ti ya tengo un nombre, me llamo " + nombreAsistente ;
+            utter.text = "Gracias a ti ya tengo un nombre, me llamo " + nombreAsistente;
             window.speechSynthesis.speak(utter);
           });
 
@@ -122,13 +119,26 @@ function Ecuchando() {
           window.speechSynthesis.speak(utter);
         }
 
+      },
+
+      'cuantos anos tienes': function () {
+        var FechaDesarrollo = new Date(2021, 09, 14);
+        var hoy = Date.now();
+
+        var diff = Math.floor(FechaDesarrollo.getTime() - hoy);
+        var day = 1000 * 60 * 60 * 24;
+        var days = Math.floor(diff / day);
+
+        utter.text = `La edad es solo un numero, pero me desarrollaron hace ${days-29} dias`
+        utter.voice = voces[1];
+        window.speechSynthesis.speak(utter);
       }
 
     };
 
   }
 
-  if(!annyang){
+  if (!annyang) {
     alert("Lo sentimos, su navegador no es compatible con este asistente");
   }
 
@@ -188,4 +198,5 @@ async function StopAudio() {
   audio.type = 'audio/wav';
   console.log("Se ha parado la musica.")
 }
+
 

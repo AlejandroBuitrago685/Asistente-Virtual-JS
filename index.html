@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Asistente Virtual</title>
-        <LINK href="style.css" rel="stylesheet" type="text/css">
-        <script src="C:\Users\alevi\OneDrive\Escritorio\Proyectos\Asistente por voz\annyang.js"></script>
-        <script src="C:\Users\alevi\OneDrive\Escritorio\Proyectos\Asistente por voz\boton.js"></script>
-    </head>
+<head>
+    <title>Asistente Virtual</title>
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+    <script src="C:\Users\alevi\OneDrive\Escritorio\Proyectos\Asistente por voz\annyang.js"></script>
+    <script src="C:\Users\alevi\OneDrive\Escritorio\Proyectos\Asistente por voz\asistente.js"></script>
+</head>
 
-    <body style="width: 100; height: 100;">
-        <div class="header"></div>
+<body style="width: 100; height: 100;">
+    <div class="header"></div>
+    <div class="container-flex">
         <div class="main-landing-message">
             <h1>Asistente de voz virtual</h1>
             <h2>Automatiza tus taeras diarias con tu propia voz.</h2>
-            <p>Completa tus tareas diarias y utiliza tu propio asistente de voz para <br> automatizar todas esas labores que necesites.</p>
+            <p>Completa tus tareas diarias y utiliza tu propio asistente de voz para <br> automatizar todas esas labores
+                que necesites.</p>
             <button id="escuchar" class="button" onclick="Ecuchando()">Escuchar 📢</button>
             <button id="parar" class="button" onclick="Parar()">Parar de escuchar</button>
         </div>
 
-        <footer>
-            Hecho por Alejandro Buitrago
-        </footer>
+        <div class="animacion">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_t0hxrooj.json" background="transparent"
+                speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+        </div>
+    </div>
 
-    </body>
+    <div class="features">
+        <div class="wrapper">
+            <div class="caja-feature">
+               <p class="count-text ">Automatiza tus tareas</p>
+            </div>
+        
+            <div class="caja-feature">
+              <p class="count-text ">SomeText GoesHere</p>
+            </div>
+        
+            <div class="caja-feature">
+              <p class="count-text ">SomeText GoesHere</p>
+            </div>
+        
+            <div class="caja-feature">
+              <p class="count-text ">SomeText GoesHere</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        Hecho por Alejandro Buitrago
+    </footer>
+
+</body>
 
 </html>

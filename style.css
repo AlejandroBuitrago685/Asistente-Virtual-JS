@@ -17,6 +17,26 @@ body {
 	}
 }
 
+.container-flex{
+  display: flex;
+}
+
+.animacion{
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 350px;
+}
+
+.features{
+  width: 101%;
+  height: auto;
+  background-color: #333;
+  text-align: center;
+  padding: 50px;
+  margin-left: -10px;
+  font-family: sans-serif;
+}
 
 #parar{
     background-color: brown;
@@ -59,6 +79,7 @@ body {
     margin-top: 100px;
     padding-left: 150px;
     margin-bottom: 150px;
+    width: auto;
     
   }
   .main-landing-message p {
@@ -99,3 +120,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
+.caja-feature{background-color: white; border-radius: 20px; margin-right: 50px; padding: 20px; display: inline-flex;}
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
